@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<canal name="TruTV" id="66">
+	<dia name="Lunes 15">
+		<hora name="00.00">
+			<programa name="Un Programa" id="231" description="Este programa trata sobre tal cosa." />
+		</hora>
+		<hora name="01.00">
+			<programa name="Otro Programa"  id="2321" description="Este programa trata sobre tal cosa." />
+		</hora>
+	</dia>
+	<dia name="Martes 16">
+		<hora name="00.00">
+			<programa name="Un Programa" id="31" description="Este programa trata sobre tal cosa." />
+		</hora>
+		<hora name="01.00">
+			<programa name="Otro Programa"  id="2312" description="Este programa trata sobre tal cosa." />
+		</hora>
+	</dia>
+</canal>
