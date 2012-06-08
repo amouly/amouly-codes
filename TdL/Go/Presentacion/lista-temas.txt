@@ -1,0 +1,49 @@
+
+
+		/// -Historia del lenguaje. Paradigma en el que se inserta.
+
+
+-Estructura de la máquina subyacente.
+
+
+		/// -Procedimientos, funciones y pasajes de parámetros (con programas ejemplos).
+
+
+
+
+
+		/// -Sistema de tipos (con programas ejemplos en todos los casos):
+
+		/// *Tipo provistos por el lenguaje
+
+		/// *Representación de los tipos de datos
+
+		/// *Tipos definidos por el usuario.
+
+		/// *Tipos abstractos de datos.
+
+*Polimorfismo.
+
+*Herencia.
+
+
+
+		/// -Estructuras de control (con programas ejemplos en todos los casos):
+
+		/// *Estructuras estándar.
+
+		/// *Manejo de excepciones.
+
+		/// *Soporte de concurrencia.
+
+
+
+-Manejo de memoria y recolección de basura.
+
+
+
+*Toda otra característica del lenguaje que lo haga destacable.
+
+		/// *Para qué sirve y para qué no sirve el lenguaje.
+
+*Ejemplo de un programa "típico" del lenguaje (donde se hace algo para lo que sirve).
