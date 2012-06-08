@@ -1,4 +1,0 @@
-local X Y in
- X = {Fact 100} 
- Y = X + 1 % the value of X is needed and fact is computed
-end
