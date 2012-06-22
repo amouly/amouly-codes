@@ -1,0 +1,14 @@
+application: amoulyblog
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+
+- url: /templates/css
+  static_dir: static/templates/css
+
+- url: /.*
+  script: _go_app
+ 
+
