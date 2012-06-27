@@ -30,9 +30,5 @@ func agregarCategoria(c appengine.Context, cat *Categoria) error {
     /* Envio los datos de la Categoria a la Datastore. */
     _, err := datastore.Put(c, datastore.NewIncompleteKey(c, "Categorias", nil), cat)
     
-    if err != nil {
-        return err
-    }
-    
     return err
 }

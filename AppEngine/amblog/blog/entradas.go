@@ -21,14 +21,13 @@ func getEntradas(c appengine.Context, cant int) []Entrada {
 	entradas := make([]Entrada, 0, cant)
 	
 	/* Consulto las entradas a la Datastore. */
-	q := datastore.NewQuery("Entradas").Order("-Fecha").Limit(10)
+	q := datastore.NewQuery("Entradas").Order("-Fecha").Limit(cant)
 	
 	/* Obengo todas las Entradas de la Datastore. */
 	q.GetAll(c, &entradas)
 	
 	return entradas
 }
-
 
 func agregarEntrada(c appengine.Context, ent *Entrada) error {
     
