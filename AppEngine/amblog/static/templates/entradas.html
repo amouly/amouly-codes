@@ -9,18 +9,14 @@
 		<div id="menuLateral">
 			<h2>Categorías</h2>
 			<ul>
-				<li>un item</li>
-				<li>un item</li>
-				<li>un item</li>
-				<li>un item</li>
-				<li>un item</li>
-				<li>un item</li>
-				<li>un item</li>
+				{{range .Categorias}}
+				<li><a href="categoria/{{.Nombre | urlquery}}/">{{.Nombre}}</a></li>
+				{{end}}
 			</ul>
 		</div>
 		<div id="contenido">
 			<h2>Entradas</h2>
-			{{range .}}
+			{{range .Entradas}}
 			<div class="contenedorPost">
 				<h3>{{.Titulo}}</h3>
 				<p>{{.Contenido}}</p>

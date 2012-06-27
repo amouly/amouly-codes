@@ -17,23 +17,17 @@
 				<div>
 					<label>Categoría</label>
 					<select name="categoria">
-						<option value="Indefinido">- Seleccionar -</option>
-						{{range .Categorias}}
-						<option value="{{.Nombre}}">{{.Nombre}}</option>
-						{{end}}
+						<option value="Prueba">Prueba</option>
+						<option value="Algo">Algo</option>
+						<option value="Programación">Programación</option>
 					</select>
 				</div>
 				<label>Contenido</label>
 				<div><textarea name="contenido" rows="8" cols="65"></textarea></div>
 				<div><input type="submit" value="Agregar Entrada" /></div>
 			</form>
-			<form action="/agregar-categoria/" method="post" class="contenedorForm">
-				<div><h3>Agregar Categoría</h3></div>
-				<div>
-					<label>Nombre</label>
-					<input type="text" name="nombre" />
-				</div>
-				<div><input type="submit" value="Agregar Categoria" /></div>
+			<form action="/agregar-entrada/" method="post" class="contenedorForm">
+				<div><h3>Borrar / Editar Entradas</h3></div>
 			</form>
 		</div>
 	</body>

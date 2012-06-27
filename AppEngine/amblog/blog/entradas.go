@@ -3,8 +3,6 @@ package blog
 import (
 	"appengine"
     "appengine/datastore"
-    "net/http"
-    "html/template"
     "time"
 )
 
@@ -17,37 +15,25 @@ type Entrada struct {
 	Fecha time.Time
 }
 
-/* Parseo el template. */
-var entradasTpl = template.Must(template.ParseFiles("static/templates/entradas.html"))
-
-func init() {
-	/* Asigno el reques a la función. */
-    http.HandleFunc("/", mostrarEntradas)
-}
-
-func mostrarEntradas(w http.ResponseWriter, r *http.Request) {
-		
-	/* Inicializo el contexto. */
-	c := appengine.NewContext(r)
+func getEntradas(c appengine.Context, cant int) []Entrada {
+	
+	/* Creo un slice de 'cant' posiciones. */
+	entradas := make([]Entrada, 0, cant)
 	
 	/* Consulto las entradas a la Datastore. */
 	q := datastore.NewQuery("Entradas").Order("-Fecha").Limit(10)
 	
-	/* Creo un slice de 10 posiciones. */
-	entradas := make([]Entrada, 0, 10)
-	
 	/* Obengo todas las Entradas de la Datastore. */
-	_, err := q.GetAll(c, &entradas)
+	q.GetAll(c, &entradas)
 	
-    if err != nil {
-        http.Error(w, err.Error(), http.StatusInternalServerError)
-        return
-    }
+	return entradas
+}
+
+
+func agregarEntrada(c appengine.Context, ent *Entrada) error {
     
-    /* Ejecuto el template y envio la salida al Writer. */
-	err2 := entradasTpl.Execute(w, entradas)
-    
-    if err2 != nil {
-        http.Error(w, err2.Error(), http.StatusInternalServerError)
-    }
+    /* Envio los datos de la Entrada a la Datastore. */
+    _, err := datastore.Put(c, datastore.NewIncompleteKey(c, "Entradas", nil), ent)
+      
+    return err
 }
