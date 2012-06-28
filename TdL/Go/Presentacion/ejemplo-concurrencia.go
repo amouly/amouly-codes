@@ -17,14 +17,14 @@ func suma(laLista []int, elCanal chan int) {
 func main() {
 	unaLista := []int{7, 2, 8, -9, 4, 0}
 
-	/* Creo un canal */
+	/* Creo un canal. */
 	unCanal := make(chan int)
 	
-	/* Creo dos Goroutines */
+	/* Creo dos Goroutines, con la lista dividida en 2. */
 	go suma(unaLista[:len(unaLista)/2], unCanal)
 	go suma(unaLista[len(unaLista)/2:], unCanal)
 	
-	/* Recibo la información del canal (esta encolada) y la asigno */
+	/* Recibo la información del canal (esta encolada) y la asigno. */
     x, y := <-unCanal, <-unCanal
 
 	fmt.Println(x, y, x + y)
