@@ -8,7 +8,7 @@ h2 { font: 30px Arial; }
 #menuLateral { padding: 30px; float: right; width: 130px; display: block; border: solid #82b5e1 3px; margin: 90px 20px 0 0; }
 #menuLateral h2 { font: 20px Arial; border-bottom: solid #82b5e1 3px; padding: 0px 0 10px 0;}
 #menuLateral li { border-bottom: solid #82b5e1 1px; }
-#menuLateral a { color: #666; font: bold 15px Arial; display: block; text-decoration: none; padding: 20px 15px; }
+#menuLateral a { font: bold 15px Arial; color: #666; display: block; text-decoration: none; padding: 20px 15px; }
 #menuLateral a:hover { background-color: #ebebeb; }
 
 .contenedorPost, .contenedorForm { border: solid #82b5e1 3px; margin: 25px 0 20px 0; padding: 10px 25px 25px 25px; }
