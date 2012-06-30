@@ -1,1 +1,4 @@
-asd
+package main
+
+import "fmt"
+
