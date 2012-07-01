@@ -49,7 +49,7 @@ fun {Sacar S E}
 end
 
 
-
+% ACA HAY QUE DEFINIR LAS PRIMITIVAS DE DICCIONARIO
 
 local
 	{NuevoEmpacador Envolver Desenvolver}
