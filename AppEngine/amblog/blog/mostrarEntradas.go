@@ -6,6 +6,7 @@ import (
     "html/template"
 )
 
+/* Estructura del Blog. */
 type Contenido struct {
 	Entradas []Entrada
 	Categorias []Categoria
