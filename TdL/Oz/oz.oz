@@ -1,1 +1,0 @@
-declare V=1
