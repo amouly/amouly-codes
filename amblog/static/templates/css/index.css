@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0; list-style: none; }
+#header { background: #2388db; border-bottom: solid #1d73ba 5px ; }
+h1 { margin: 0; padding: 30px; color: white; font: 35px Arial; }
+
+#contenido { padding: 30px; width: 530px; }
+h2 { font: 30px Arial; }
+
+#menuLateral { padding: 30px; float: right; width: 130px; display: block; border: solid #82b5e1 3px; margin: 90px 20px 0 0; }
+#menuLateral h2 { font: 20px Arial; border-bottom: solid #82b5e1 3px; padding: 0px 0 10px 0;}
+#menuLateral li { border-bottom: solid #82b5e1 1px; }
+#menuLateral a { font: bold 15px Arial; color: #666; display: block; text-decoration: none; padding: 20px 15px; }
+#menuLateral a:hover { background-color: #ebebeb; }
+
+.contenedorPost, .contenedorForm { border: solid #82b5e1 3px; margin: 25px 0 20px 0; padding: 10px 25px 25px 25px; }
+h3 { font: bold 24px Arial; text-transform: uppercase; padding: 10px 0 10px 0; border-bottom: solid #82b5e1 3px; }
+p { margin: 25px 0 20px 0; font: 18px Arial; }
+
+.contenedorForm label { display: block; font: 20px Arial; margin: 25px 0 5px 0; }
+.contenedorForm input, .contenedorForm select, .contenedorForm textarea { font: 18px Arial; border: solid #82b5e1 2px; padding: 10px; }
+.contenedorForm input[type="text"] { width: 50%; }
+.contenedorForm input[type="submit"] { margin-top: 10px; }
+.contenedorForm textarea { width: 80%; }
+
+.postFoot { background: #ebebeb; padding: 15px; }
+.postFoot span { font: normal 14px Arial; }

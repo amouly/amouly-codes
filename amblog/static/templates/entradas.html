@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Adrián Mouly - Blog</title>
+		<link href="/templates/css/index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="header"><h1>Adrián Mouly - Blog</h1></div>
+		<div id="menuLateral">
+			<h2>Categorías</h2>
+			<ul>
+				{{range .Categorias}}
+				<li><a href="categoria/{{.Nombre | urlquery}}/">{{.Nombre}}</a></li>
+				{{end}}
+			</ul>
+		</div>
+		<div id="contenido">
+			<h2>Entradas</h2>
+			{{range .Entradas}}
+			<div class="contenedorPost">
+				<h3>{{.Titulo}}</h3>
+				<p>{{.Contenido}}</p>
+				<ul class="postFoot">
+					<li><span><b>Fecha:</b> {{.Fecha}}</span></li>
+					<li><span><b>Categoría:</b> {{.Categoria}}</span></li>
+					<li><span><b>Autor:</b> {{.Autor}}</span></li>
+				</ul>
+			</div>
+			{{end}}
+		</div>
+	</body>
+</html>
