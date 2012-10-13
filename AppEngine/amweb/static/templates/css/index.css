@@ -1,7 +1,0 @@
-/* GLOBAL */
-* { border: 0; outline: none; margin: 0; padding: 0; list-style: none; }
-
-html { background-color: #ebebeb; }
-	body { width: 790px; margin: auto; padding: 20px; background-color: #fff; border: 1px #fff solid; -moz-border-radius: 9px; -webkit-border-radius: 9px; border-radius: 9px; }
-		header {  }
-			header h1 { text-indent: -9999px; background: url(static/templates/bitmaps/logo.png); }
